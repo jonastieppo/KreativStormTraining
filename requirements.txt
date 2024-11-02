@@ -3,4 +3,6 @@ matplotlib
 numpy
 scipy
 sympy
+ipykernel
+seaborn
 statsmodels
