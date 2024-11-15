@@ -18,5 +18,7 @@ def shapiro_test(Y_var : pd.Series):
     ax.legend(loc='upper left')
     if ML_data.pvalue>0.05:
         ax.annotate('As p-value is greater than 5%, \n it is normally distributed.', xy=(ML_data.pvalue*1.2, 15))
+        print('As p-value is greater than 5%, \n it is normally distributed.')
     else:
         ax.annotate('As p-value is lower than 5%, \n it is NOT normally distributed.', xy=(ML_data.pvalue*1.2, 15))
+        print('As p-value is lower than 5%, \n it is NOT normally distributed.')
